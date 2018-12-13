@@ -1,0 +1,11 @@
+library(igraph)
+g <- read.graph("C:\\Users\\edacal\\Downloads\\session7networks\\edges.txt",directed = FALSE)
+V(g)
+E(g)
+diameter(g)
+transitivity(g)
+degree.distribution(g)
+l <- page.rank(g)$vector
+plot(g,vertex.size=l * 500)
+wc <- optimal.community(g)
+plot(g, vertex.color=membership(wc))
