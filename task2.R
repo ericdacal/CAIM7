@@ -1,0 +1,17 @@
+# Task 2
+g <- read.graph("edges.txt",directed = FALSE)
+plot(g)
+V(g)
+E(g)
+diameter(g,directed=FALSE)
+transitivity(g)
+degree(g)
+degree.distribution(g)
+max(degree.distribution(g))
+plot(degree.distribution(g))
+wal <- walktrap.community(graph)
+plot(wal, g)
+sizes(wal)
+plot(sizes(wal))
+max(sizes(wal))
+
